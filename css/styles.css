@@ -318,15 +318,6 @@ transition: var(--change-background-color);
 background-color: var(--pressed-state);
 }
 
-.modal-icon {
-transition: var(--change-customer-icons);
-}
-
-.modal-button:hover > .modal-icon {
-fill: var(--white); 
-}
-
-
 /* Form */
 
 .modal-title {
