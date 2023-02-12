@@ -67,18 +67,94 @@
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button data-modal-open class="btn" type="button">Order Service</button>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <p></p>
-            <button data-modal-close class="modal-button" type="button">
-              <svg class="modal-icon" width="8px" height="8px">
-                <use href="./images/symbol-defs.svg#close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
+
+      <!-- Modal -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button data-modal-close class="modal-button" type="button">
+            <svg class="modal-icon" width="8px" height="8px">
+              <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+
+          <!-- Form -->
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
+
+          <form class="modal-form" name="modal_form">
+            <div class="modal-form-group">
+              <label class="modal-label" for="user_name">Name</label>
+
+              <div class="modal-form-field">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                />
+                <svg class="modal-form-icon" width="18px" height="24px">
+                  <use href="./images/symbol-defs.svg#name"></use>
+                </svg>
+              </div>
+
+              <label class="modal-label" for="user_phone">Phone</label>
+
+              <div class="modal-form-field">
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="user_phone"
+                  id="user_phone"
+                />
+                <svg class="modal-form-icon" width="18px" height="24">
+                  <use href="./images/symbol-defs.svg#phone"></use>
+                </svg>
+              </div>
+
+              <label class="modal-label" for="user_mail">Email</label>
+
+              <div class="modal-form-field">
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="user_mail"
+                  id="user_mail"
+                />
+                <svg class="modal-form-icon" width="18px" height="24px">
+                  <use href="./images/symbol-defs.svg#email"></use>
+                </svg>
+              </div>
+
+              <label class="modal-label" for="user_message">Comment</label>
+              <textarea
+                class="modal-message"
+                name="user_message"
+                id="user_message"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <label class="modal-form-agreement">
+              <input
+                class="modal-form-checkbox"
+                type="checkbox"
+                name="user_agreement"
+              />
+
+              <span class="modal-form-desc"
+                >I accept the terms and conditions of the
+                <a class="modal-form-link" href="" target="_blank"
+                  >Privacy Policy</a
+                ></span
+              >
+            </label>
+            <button class="modal-form-button btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
 
       <!--Our advantages-->
       <section class="section">
@@ -645,6 +721,28 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscribe" name="subscribe_form">
+          <label class="subscribe-label" for="subscribe-email">Subscribe</label>
+          <div class="subscribe-form">
+            <input
+              class="subscribe-field"
+              type="email"
+              name="user-email"
+              id="subscribe-email"
+              placeholder="E-mail"
+            />
+
+            <div class="subscribe-button-group">
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="subscribe-button-icon" width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#footer-form-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
